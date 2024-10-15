@@ -51,8 +51,8 @@ public class EbaySearch {
 	public void user_enters_the_multiple_product_name_as_datatable_and_multiple_product_catagory_as_datatable_using_list_of_map(DataTable dataTable) {
 		List<Map<String, String>> maps = dataTable.asMaps();
 		for (Map<String, String> map : maps) {
-			String prodName = map.get("ProdName");
-			String prodCatagory = map.get("ProdCatagory");
+			String prodName = map.get("ProductName");
+			String prodCatagory = map.get("ProductCatagory");
 			ebayHome.enterSearchText(prodName);
 			ebayHome.selectProdCatagory(prodCatagory);
 			ebayHome.clickOnSearchButton();

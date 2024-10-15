@@ -6,7 +6,7 @@ public class PageObjectManager {
 	
 	private AmazonHome amazonHome;
 	private EbayHome ebayHome;
-	private WebDriver driver;
+	private WebDriver driver;//123
 	
 	public PageObjectManager(WebDriver driver) {
 		this.driver = driver;

@@ -5,14 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import util.PropertyReader;
+
 public class AmazonHome {
 	
-	private WebDriver driver;
+	private WebDriver driver;//123
 	private By productNameTxt = By.id("twotabsearchtextbox");
 	private By prodCatagoryDrop = By.id("searchDropdownBox");
 	private By searchButton = By.id("nav-search-submit-button");
-	private By searchResult = By.xpath("(//div[@class='a-section a-spacing-small a-spacing-top-small']/span)[1]");
-	String sURL = "https:www.amazon.in/";
+	private By searchResult = By.xpath("(//div[@class='a-section a-spacing-small a-spacing-top-small']/span)[0]");
+	String sURL = PropertyReader.readDataFromPropertyFile("environment", "amazon");
 	
 	public AmazonHome(WebDriver driver) {
 		this.driver = driver;
